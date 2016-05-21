@@ -1,3 +1,15 @@
+body {
+  background-color: lightblue;
+}
+
+.jumbotron {
+  background-color: orange;
+  border-color: white;
+  border-style:solid;
+  border-width: 1px;
+  border-radius: 0px;
+
+}
 td {
   background-color: darkblue;
   border-color: white;
@@ -6,9 +18,30 @@ td {
   height: 55px;
   width: 55px;
   color: white;
+  text-align:center;
+  font-family: 'Wallpoet', sans-serif;;
+  font-size: 16pt;
 }
-/*
-.shipSquare {
+
+.jumbotron > h1 {
+  font-family: 'Wallpoet', cursive;
+  font-size: 60pt;
+  color: white;
+  }
+
+h2 {
+  font-family: 'Wallpoet', cursive;
+  font-size: 24pt;
+  color: darkblue;
+}
+
+/*td:hover {
+    background-color: darkblue;
+    -webkit-animation: blink .75s linear infinite;
+    -moz-animation: blink .75s linear infinite;
+    -ms-animation: blink .75s linear infinite;
+    -o-animation: blink .75s linear infinite;
+    animation: blink .75s linear infinite;
 }*/
 
 .hitSquare {
@@ -26,4 +59,20 @@ td {
 
 .sunkenShip {
   background-color: red;
+}
+
+.red {
+  color: red;
+}
+
+.blink {
+    color: red;
+    animation: blink .75s linear infinite;
+}
+
+@keyframes blink {
+    0% { opacity: 1; }
+    50% { opacity: 1; }
+    50.01% { opacity: 0; }
+    100% { opacity: 0; }
 }
